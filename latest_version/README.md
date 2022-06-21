@@ -1,6 +1,5 @@
 ###############################################################################
-### Simulation included in the latest version of the manuscript (June 2022) ###
-### Descriptions of the files/directories included                          ###
+Simulation included in the latest version of the manuscript (June 2022)
 ###############################################################################
 
 <i>external_code:</i> external libraries (e.g., fdr_bh.m, export_fig, etc...) used to perform analyses<br><br>
