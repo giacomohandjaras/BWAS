@@ -1,6 +1,7 @@
 ###############################################################################
-Simulation included in the latest version of the manuscript (June 2022)
+###Simulation included in the latest version of the manuscript (June 2022)
 ###############################################################################
+<br><br>
 
 <i>external_code:</i> external libraries (e.g., fdr_bh.m, export_fig, etc...) used to perform analyses<br><br>
 <i>code:</i> our set of functions to simulate data, calculate power, type M and S errors, replication rate<br><br>
