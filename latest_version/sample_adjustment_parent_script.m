@@ -34,13 +34,13 @@ random_seed = 15012018;
 output_folder = 'derivatives';
 
 % Determine whether results should be written to disk
-save_workspace = 'yes';
+save_workspace = 'no';
 
 % Determine whether figures should be displayed
 display_figures = 'yes';
 
 % Determine whether figures should be written to disk
-save_figures = 'yes';
+save_figures = 'no';
 
 % Size of font in figures
 figure_figure_font_size = 12;
