@@ -1,4 +1,4 @@
-function bootstrap_output = bootstrap_correlation(behavior, brain, alpha_level, sample_size_range, n_sample_sizes, n_bootstraps)
+function bootstrap_output = bootstrap_correlation_with_noreplacement(behavior, brain, alpha_level, sample_size_range, n_sample_sizes, n_bootstraps)
 
 % behavior: a n-by-1 array storing simulated behavioral scores, where n
 % represents the number of participants in the full sample. It can be
@@ -29,7 +29,7 @@ function bootstrap_output = bootstrap_correlation(behavior, brain, alpha_level, 
 % 0.1% precision.
 
 % coded by Luca Cecchetti & Giacomo Handjaras, IMT-Lucca, Italy
-% vers 20220630
+% vers 20220619
 
 % Timestamp
 t0 = tic;
@@ -98,8 +98,8 @@ simulated_significant_pvalue_fdr = ...
 % For each random resampling
 for b = 1:n_bootstraps
     
-    % Select random batch of participants with replacement
-    resampling_array = randi(n_full_sample,1,n_full_sample);
+    % Randomize the order of simulated participants
+    resampling_array = randperm(n_full_sample);
     
     % For each sample size
     for o = 1:n_sample_sizes
