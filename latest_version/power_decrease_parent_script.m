@@ -78,7 +78,7 @@ save_workspace = 'no';
 display_figures = 'yes';
 
 % Determine whether figures should be written to disk
-save_figures = 'np';
+save_figures = 'no';
 
 % Size of font in figures
 figure_font_size = 12;
